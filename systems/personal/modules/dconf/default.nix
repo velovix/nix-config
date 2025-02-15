@@ -18,6 +18,11 @@
           switch-to-application-3 = mkEmptyArray (type.string);
           switch-to-application-4 = mkEmptyArray (type.string);
         };
+        "org/gnome/desktop/background" = {
+          picture-uri = "file:///" + toString ./. + "/wallpaper.png";
+          picture-uri-dark = "file:///" + toString ./. + "/wallpaper.png";
+          picture-options = "zoom";
+        };
       };
     }];
   };

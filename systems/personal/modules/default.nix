@@ -4,7 +4,7 @@
 
     ./gnome.nix
     ./1password.nix
-    ./dconf.nix
+    ./dconf
     ./shell.nix
     ./locale.nix
     ./sound.nix
