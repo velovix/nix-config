@@ -17,6 +17,8 @@
 
   environment.systemPackages = with pkgs; [
     neovim
+    # For neovim clipboard integration
+    wl-clipboard
     git
   ];
 
