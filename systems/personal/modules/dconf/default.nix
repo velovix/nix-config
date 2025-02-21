@@ -30,6 +30,10 @@
         "org/gnome/Console" = {
           theme = "auto";
         };
+        # "Natural" scrolling
+        "org/gnome/desktop/peripherals/mouse" = {
+          natural-scroll = true;
+        };
       };
     }];
   };
