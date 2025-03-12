@@ -20,6 +20,7 @@
     # For neovim clipboard integration
     wl-clipboard
     git
+    tree
   ];
 
   # This value determines the NixOS release from which the default
