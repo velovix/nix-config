@@ -8,6 +8,7 @@
     ./shell.nix
     ./locale.nix
     ./sound.nix
+    ./distrobox.nix
   ];
 }
 
