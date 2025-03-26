@@ -14,6 +14,7 @@
 
   networking.networkmanager.enable = true;
   services.printing.enable = true;
+  powerManagement.enable = true;
 
   environment.systemPackages = with pkgs; [
     neovim
@@ -21,6 +22,7 @@
     wl-clipboard
     git
     tree
+    gimp
   ];
 
   # This value determines the NixOS release from which the default

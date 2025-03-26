@@ -34,6 +34,10 @@
         "org/gnome/desktop/peripherals/mouse" = {
           natural-scroll = true;
         };
+        # Enable fractional scaling
+        "org/gnome/mutter" = {
+          experimental-features = [ "scale-monitor-framebuffer" ];
+        };
       };
     }];
   };
