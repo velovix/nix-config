@@ -12,6 +12,8 @@
 
   home.packages = with pkgs; [
     discord
+    blender
+    flashprint
   ];
 
   programs.firefox.enable = true;
