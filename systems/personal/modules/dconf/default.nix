@@ -19,6 +19,8 @@
           switch-to-application-2 = mkEmptyArray (type.string);
           switch-to-application-3 = mkEmptyArray (type.string);
           switch-to-application-4 = mkEmptyArray (type.string);
+          # This shortcut (Super+H) conflicts with Pop Shell
+          minimize = mkEmptyArray (type.string);
         };
         # Set a desktop background
         "org/gnome/desktop/background" = {
