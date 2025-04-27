@@ -20,6 +20,16 @@
           ./systems/personal
         ];
       };
+      tyler-raise = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+	specialArgs = { inherit inputs; };
+        modules = [
+          { networking.hostName = "tyler-raise"; }
+          ./hardware/thinkpad-p16s
+          ./systems/personal
+          ./systems/raise
+        ];
+      };
     };
   };
 }

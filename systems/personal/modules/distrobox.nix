@@ -1,8 +1,5 @@
 { pkgs, ... }: {
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
-  };
+  virtualisation.docker.enable = true;
 
   environment.systemPackages = with pkgs; [
     distrobox
