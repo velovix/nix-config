@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ pkgs, lib, ... }: {
   programs.dconf.enable = true;
 
   programs.dconf.profiles = {
@@ -18,9 +18,6 @@
             minimize = mkEmptyArray (type.string);
           };
         in rec {
-          "org/gnome/shell".enabled-extensions = [
-            "pop-shell@system76.com"
-          ];
           # Focus follows mouse
           "org/gnome/desktop/wm/preferences".focus-mode = "sloppy";
           # Add shortcuts to move between specific spaces
@@ -43,6 +40,24 @@
           # Enable fractional scaling
           "org/gnome/mutter" = {
             experimental-features = [ "scale-monitor-framebuffer" ];
+          };
+
+          # Extension settings
+          "org/gnome/shell".enabled-extensions = [
+            pkgs.gnomeExtensions.paperwm.extensionUuid
+            pkgs.gnomeExtensions.auto-move-windows.extensionUuid
+          ];
+          "org/gnome/shell/extensions/paperwm" = {
+            cycle-height-steps = [ 0.5 1.0 ];
+            cycle-width-steps = [ 0.33 0.5 1.0 ];
+          };
+          "org/gnome/shell/extensions/auto-move-windows" = {
+            application-list = [
+              "firefox.desktop:1"
+              "code.desktop:2"
+              "codium.desktop:2"
+              "org.gnome.Console.desktop:3"
+            ];
           };
         };
     }];

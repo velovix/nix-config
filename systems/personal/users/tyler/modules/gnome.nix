@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    gnomeExtensions.pop-shell
+    gnomeExtensions.paperwm
+    gnomeExtensions.auto-move-windows
     gnome-tweaks
   ];
 }
