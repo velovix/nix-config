@@ -10,12 +10,15 @@
             switch-to-workspace-2 = ["<Super>2"];
             switch-to-workspace-3 = ["<Super>3"];
             switch-to-workspace-4 = ["<Super>4"];
+            switch-to-workspace-left = ["<Super>h"];
+            switch-to-workspace-right = ["<Super>l"];
+            # These shortcuts conflict with mine
             switch-to-application-1 = mkEmptyArray (type.string);
             switch-to-application-2 = mkEmptyArray (type.string);
             switch-to-application-3 = mkEmptyArray (type.string);
             switch-to-application-4 = mkEmptyArray (type.string);
-            # This shortcut (Super+H) conflicts with Pop Shell
             minimize = mkEmptyArray (type.string);
+            screensaver = mkEmptyArray (type.string);
           };
         in rec {
           # Focus follows mouse
@@ -57,6 +60,7 @@
               "code.desktop:2"
               "codium.desktop:2"
               "org.gnome.Console.desktop:3"
+              "slack.desktop:4"
             ];
           };
         };
