@@ -17,6 +17,8 @@
     enable = true;
     # This may also help with legacy Nvidia Docker
     enableNvidia = true;
+    # I don't need this feature and it causes NixOS to hang on shutdown
+    liveRestore = false;
   };
   users.extraGroups.docker.members = [ "tyler" ];
 
