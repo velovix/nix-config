@@ -44,6 +44,9 @@
           "org/gnome/mutter" = {
             experimental-features = [ "scale-monitor-framebuffer" ];
           };
+          "org/gnome/settings-daemon/plugins/power" = {
+            sleep-inactive-ac-type = "nothing";
+          };
 
           # Extension settings
           "org/gnome/shell".enabled-extensions = [
