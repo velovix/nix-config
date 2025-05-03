@@ -4,7 +4,7 @@
   imports = [
     ../shared/modules
     ./modules
-    ./users
+    ../shared/users
   ];
 
   nixpkgs.config.allowUnfree = true;

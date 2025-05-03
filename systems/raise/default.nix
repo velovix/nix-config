@@ -4,6 +4,7 @@
   imports = [
     ../shared/modules
     ./modules
+    ../shared/users
   ];
 
   environment.systemPackages = with pkgs; [
