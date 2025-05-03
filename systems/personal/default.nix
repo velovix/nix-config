@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../shared/modules
     ./modules
     ./users
   ];
