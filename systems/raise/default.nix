@@ -12,6 +12,7 @@
     vagrant
     vscode
     slack
+    nomachine-client
   ];
 
   # This value determines the NixOS release from which the default
