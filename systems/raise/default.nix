@@ -10,7 +10,6 @@
   environment.systemPackages = with pkgs; [
     vault
     vagrant
-    vscode
     slack
     nomachine-client
   ];
