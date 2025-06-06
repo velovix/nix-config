@@ -16,6 +16,7 @@
       if [ -f "$HOME/secrets.sh" ]; then
         source "$HOME/secrets.sh"
       fi
+      export PS1="%{$(tput setaf 226)%}%n%{$(tput setaf 220)%}@%{$(tput setaf 214)%}%m %{$(tput setaf 33)%}%1~ %{$(tput sgr0)%}$ "
     '';
   };
 }
