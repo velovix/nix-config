@@ -7,7 +7,24 @@
     ../shared/users
   ];
 
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  networking.networkmanager.enable = true;
+  services.printing.enable = true;
+  powerManagement.enable = true;
+
   environment.systemPackages = with pkgs; [
+    neovim
+    # For neovim clipboard integration
+    wl-clipboard
+    git
+    tree
+    gimp
+
     vault
     vagrant
     slack

@@ -26,7 +26,6 @@
         modules = [
           { networking.hostName = "tyler-raise"; }
           ./hardware/thinkpad-p16s
-          ./systems/personal
           ./systems/raise
         ];
       };
