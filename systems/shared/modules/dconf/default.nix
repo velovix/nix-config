@@ -22,7 +22,10 @@
           };
         in rec {
           # Focus follows mouse
-          "org/gnome/desktop/wm/preferences".focus-mode = "sloppy";
+          "org/gnome/desktop/wm/preferences" = {
+            focus-mode = "sloppy";
+            num-workspaces = mkInt32 4;
+          };
           # Add shortcuts to move between specific spaces
           "org/gnome/shell/keybindings" = keybindings;
           "org/gnome/desktop/wm/keybindings" = keybindings;
@@ -40,9 +43,10 @@
           "org/gnome/desktop/peripherals/mouse" = {
             natural-scroll = true;
           };
-          # Enable fractional scaling
           "org/gnome/mutter" = {
+            # Enable fractional scaling
             experimental-features = [ "scale-monitor-framebuffer" ];
+            dynamic-workspaces = false;
           };
           "org/gnome/settings-daemon/plugins/power" = {
             sleep-inactive-ac-type = "nothing";
