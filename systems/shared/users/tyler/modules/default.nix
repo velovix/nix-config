@@ -1,8 +1,8 @@
 { ... }: {
   imports = [
     ./neovim
-    ./git.nix
     ./gnome.nix
+    ./git.nix
     ./1password.nix
     ./libreoffice.nix
   ];

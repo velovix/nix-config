@@ -5,6 +5,7 @@
     ../shared/modules
     ./modules
     ../shared/users
+    ./users
   ];
 
   nixpkgs.config.allowUnfree = true;
