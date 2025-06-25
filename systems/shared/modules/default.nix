@@ -6,6 +6,7 @@
     ./shell.nix
     ./locale.nix
     ./sound.nix
+    ./gparted.nix
   ];
 }
 
