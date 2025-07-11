@@ -7,6 +7,7 @@
     ./locale.nix
     ./sound.nix
     ./gparted.nix
+    ./neovim.nix
   ];
 }
 
