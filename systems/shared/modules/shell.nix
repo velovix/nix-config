@@ -13,6 +13,7 @@
     promptInit = options.programs.zsh.promptInit.default + ''
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
+      bindkey "^R" history-incremental-search-backward
       if [ -f "$HOME/secrets.sh" ]; then
         source "$HOME/secrets.sh"
       fi
