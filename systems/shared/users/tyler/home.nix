@@ -14,6 +14,7 @@
     discord
     blender
     flashprint
+    qdirstat
   ];
 
   programs.firefox.enable = true;
