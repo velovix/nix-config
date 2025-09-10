@@ -3,6 +3,7 @@
     inputs.home-manager.nixosModules.home-manager
 
     ./distrobox.nix
+    ./steam.nix
   ];
 }
 
