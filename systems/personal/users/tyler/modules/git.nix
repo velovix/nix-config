@@ -1,6 +1,6 @@
 { ... }: {
-  programs.git = {
-    userName = "Tyler Compton";
-    userEmail = "tyler@raiserobotics.ai";
+  programs.git.settings.user = {
+    name = "Tyler Compton";
+    email = "tyler@raiserobotics.ai";
   };
 }
