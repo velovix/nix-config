@@ -13,7 +13,7 @@
     nixosConfigurations = {
       amorphous = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-	specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
         modules = [
           { networking.hostName = "amorphous"; }
           ./hardware/framework13
@@ -22,7 +22,7 @@
       };
       tyler-raise = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-	specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
         modules = [
           { networking.hostName = "tyler-raise"; }
           ./hardware/thinkpad-p16s
